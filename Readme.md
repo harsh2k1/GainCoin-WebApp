@@ -8,7 +8,7 @@ CoinGain is a digital platform where users can easily let go of their time const
 ![WhatsApp Image 2021-10-31 at 11 42 13 AM (2)](https://user-images.githubusercontent.com/86097511/139571655-8cb9ab79-87f8-4c42-b467-86d0cf694df9.jpeg)
 
 # Demo Video
-https://youtu.be/m7Vcy6e_qrQ
+<iframe width="560" height="315" src="https://www.youtube.com/embed/m7Vcy6e_qrQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Tech-Stack used
 1. HTML, CSS, JavaScript
