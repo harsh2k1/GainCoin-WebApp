@@ -1,0 +1,2739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dashboard</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="Dashboard-assets/img/favicon.png" rel="icon">
+  <link href="Dashboard-assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="Dashboard-assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="Dashboard-assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="Dashboard-assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="Dashboard-assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="Dashboard-assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="Dashboard-assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="Dashboard-assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="Dashboard-assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin - v2.1.0
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="Dashboard-assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">CoinGain</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <!-- <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form> -->
+    <!-- </div>End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">4</span>
+          </a><!-- End Notification Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have 4 new notifications
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <!-- <i class="bi bi-exclamation-circle text-warning"></i> -->
+              <img src="Dashboard-assets/img/iconforall.PNG" alt=""></img>
+              <div>
+                <h4>Your Portfolio Update</h4>
+                <p>1 day returns: +0.1%
+                  <br>Total Returns: +3.8%
+                  <br>Current Value: Rs 104
+                  <br>Total Invested: Rs 10</p>
+                <p>30 min. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <!-- <i class="bi bi-x-circle text-danger"></i> -->
+              <img src="Dashboard-assets/img/iconforall.PNG" alt=""></img>
+              <div>
+                <h4>Weekly Portfolio Update</h4>
+                <p>Total Returns: +4.8%
+                  <br>Current Value: Rs 100
+                  <br>Total Invested: Rs 10</p>
+                <p>1 hr. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <!-- <i class="bi bi-check-circle text-success"></i> -->
+              <img src="Dashboard-assets/img/iconforall.PNG" alt=""></img>
+              <div>
+                <h4>Weekly Portfolio Update</h4>
+                <p>1 day returns: -0.1%
+                  <br>Total Returns: +0.48%
+                  <br>Current Value: Rs 70
+                  <br>Total Invested: Rs 7</p>
+                <p>7 days ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <!-- <i class="bi bi-info-circle text-primary"></i> -->
+              <img src="Dashboard-assets/img/iconforall.PNG" alt=""></img>
+              <div>
+                <h4>Weekly Portfolio Update</h4>
+                <p>Total Returns: +0.48%
+                  <br>Current Value: Rs 70
+                  <br>Total Invested: Rs 7</p>
+                <p>7 days ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Show all notifications</a>
+            </li>
+
+          </ul><!-- End Notification Dropdown Items -->
+
+        </li><!-- End Notification Nav -->
+
+        <!--<li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-chat-left-text"></i>
+            <span class="badge bg-success badge-number">3</span>
+          </a>End Messages Icon
+
+          <!--<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header">
+              You have 3 new messages
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="Dashboard-assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Maria Hudson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="Dashboard-assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Anna Nelson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>6 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="Dashboard-assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>David Muldon</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>8 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="dropdown-footer">
+              <a href="#">Show all messages</a>
+            </li>
+
+          </ul>End Messages Dropdown Items
+
+        </li>End Messages Nav -->
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="Dashboard-assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+          <!-- </a>End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Kevin Anderson</h6>
+              <span>Web Designer</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-gear"></i>
+                <span>Account Settings</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                <i class="bi bi-question-circle"></i>
+                <span>Need Help?</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          <!-- </ul>End Profile Dropdown Items -->
+        <!-- </li>End Profile Nav -->
+
+      </ul>
+    </nav><!--End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <!-- <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>Components</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="components-alerts.html">
+              <i class="bi bi-circle"></i><span>Alerts</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-accordion.html">
+              <i class="bi bi-circle"></i><span>Accordion</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-badges.html">
+              <i class="bi bi-circle"></i><span>Badges</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-breadcrumbs.html">
+              <i class="bi bi-circle"></i><span>Breadcrumbs</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-buttons.html">
+              <i class="bi bi-circle"></i><span>Buttons</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-cards.html">
+              <i class="bi bi-circle"></i><span>Cards</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-carousel.html">
+              <i class="bi bi-circle"></i><span>Carousel</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-list-group.html">
+              <i class="bi bi-circle"></i><span>List group</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-modal.html">
+              <i class="bi bi-circle"></i><span>Modal</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-tabs.html">
+              <i class="bi bi-circle"></i><span>Tabs</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-pagination.html">
+              <i class="bi bi-circle"></i><span>Pagination</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-progress.html">
+              <i class="bi bi-circle"></i><span>Progress</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-spinners.html">
+              <i class="bi bi-circle"></i><span>Spinners</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-tooltips.html">
+              <i class="bi bi-circle"></i><span>Tooltips</span>
+            </a>
+          </li>
+        </ul> -->
+      </li><!-- End Components Nav -->
+
+      <!-- <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-journal-text"></i><span>Forms</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="forms-elements.html">
+              <i class="bi bi-circle"></i><span>Form Elements</span>
+            </a>
+          </li>
+          <li>
+            <a href="forms-layouts.html">
+              <i class="bi bi-circle"></i><span>Form Layouts</span>
+            </a>
+          </li>
+          <li>
+            <a href="forms-editors.html">
+              <i class="bi bi-circle"></i><span>Form Editors</span>
+            </a>
+          </li>
+          <li>
+            <a href="forms-validation.html">
+              <i class="bi bi-circle"></i><span>Form Validation</span>
+            </a>
+          </li>
+        </ul> -->
+      </li><!-- End Forms Nav -->
+
+      <!-- <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-layout-text-window-reverse"></i><span>Tables</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="tables-general.html">
+              <i class="bi bi-circle"></i><span>General Tables</span>
+            </a>
+          </li>
+          <li>
+            <a href="tables-data.html">
+              <i class="bi bi-circle"></i><span>Data Tables</span>
+            </a>
+          </li>
+        </ul> -->
+      </li><!-- End Tables Nav -->
+<!-- 
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-bar-chart"></i><span>Charts</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="charts-chartjs.html">
+              <i class="bi bi-circle"></i><span>Chart.js</span>
+            </a>
+          </li>
+          <li>
+            <a href="charts-apexcharts.html">
+              <i class="bi bi-circle"></i><span>ApexCharts</span>
+            </a>
+          </li>
+          <li>
+            <a href="charts-echarts.html">
+              <i class="bi bi-circle"></i><span>ECharts</span>
+            </a>
+          </li>
+        </ul> -->
+      </li><!-- End Charts Nav -->
+<!-- 
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-gem"></i><span>Icons</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="icons-bootstrap.html">
+              <i class="bi bi-circle"></i><span>Bootstrap Icons</span>
+            </a>
+          </li>
+          <li>
+            <a href="icons-remix.html">
+              <i class="bi bi-circle"></i><span>Remix Icons</span>
+            </a>
+          </li>
+          <li>
+            <a href="icons-boxicons.html">
+              <i class="bi bi-circle"></i><span>Boxicons</span>
+            </a>
+          </li>
+        </ul> -->
+      </li><!-- End Icons Nav -->
+
+      <li class="nav-heading">Pages</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="users-profile.html">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
+        </a>
+      </li><!-- End Profile Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-faq.html">
+          <i class="bi bi-question-circle"></i>
+          <span>F.A.Q</span>
+        </a>
+      </li><!-- End F.A.Q Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-contact.html">
+          <i class="bi bi-envelope"></i>
+          <span>Contact</span>
+        </a>
+      </li><!-- End Contact Page Nav -->
+
+      <!-- <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-register.html">
+          <i class="bi bi-card-list"></i>
+          <span>Register</span>
+        </a> -->
+      </li><!-- End Register Page Nav -->
+
+      <!-- <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-login.html">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span>Login</span>
+        </a> -->
+      </li><!-- End Login Page Nav -->
+
+      <!-- <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-error-404.html">
+          <i class="bi bi-dash-circle"></i>
+          <span>Error 404</span>
+        </a> -->
+      </li><!-- End Error 404 Page Nav -->
+
+      <!-- <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-blank.html">
+          <i class="bi bi-file-earmark"></i>
+          <span>Blank</span>
+        </a> -->
+      </li><!-- End Blank Page Nav -->
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Dashboard</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Dashboard</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section dashboard">
+      <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-8">
+          <div class="row">
+
+            <!-- Sales Card -->
+            <div class="col-xxl-4 col-md-6">
+              <div class="card info-card sales-card">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Bitcoin <span>| Today</span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-currency-dollar"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>INR 45,99,012</h6>
+                      <span class="text-success small pt-1 fw-bold">+3%</span> <span class="text-muted small pt-2 ps-1">increase</span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End Sales Card -->
+
+            <!-- Revenue Card -->
+            <div class="col-xxl-4 col-md-6">
+              <div class="card info-card revenue-card">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Returns <span>| One Day</span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-currency-dollar"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>INR 10</h6>
+                      <span class="text-success small pt-1 fw-bold">+8%</span> <span class="text-muted small pt-2 ps-1">increase</span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End Revenue Card -->
+
+            <!-- Customers Card -->
+            <div class="col-xxl-4 col-xl-12">
+
+              <div class="card info-card customers-card">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Total Invested <span>| Max</span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-currency-dollar"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>INR 100</h6>
+                      <!-- <span class="text-danger small pt-1 fw-bold"></span> <span class="text-muted small pt-2 ps-1">decrease</span> -->
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div><!-- End Customers Card -->
+
+            <!-- Reports -->
+            <div class="col-12">
+              <div class="card">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Your Portfolio <span>| Bitcoin</span></h5>
+
+                  <!-- Line Chart -->
+                  <div id="reportsChart"></div>
+
+                  <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                      new ApexCharts(document.querySelector("#reportsChart"), {
+                        series: [{
+                          name: 'Closing Pice',
+                          data: [9252.27750386,
+ 9428.3330848,
+ 9277.96790642,
+ 9278.8078672,
+ 9240.34632654,
+ 9276.49985018,
+ 9243.61385509,
+ 9243.21341642,
+ 9192.83736784,
+ 9132.22786293,
+ 9151.39223963,
+ 9159.03990531,
+ 9185.81691242,
+ 9164.2313647,
+ 9374.88752808,
+ 9525.36344997,
+ 9581.07201141,
+ 9536.89268563,
+ 9677.11349729,
+ 9905.16724705,
+ 10990.8733998,
+ 10912.8230505,
+ 11100.4681253,
+ 11111.2142899,
+ 11323.4664207,
+ 11759.5927707,
+ 11053.613901,
+ 11246.3487749,
+ 11205.8929179,
+ 11747.0228312,
+ 11779.7732574,
+ 11601.4727146,
+ 11754.0458135,
+ 11675.7393433,
+ 11878.1113253,
+ 11410.5256775,
+ 11584.9345762,
+ 11784.1373895,
+ 11768.8706193,
+ 11865.69857,
+ 11892.8040631,
+ 12254.4019083,
+ 11991.2332456,
+ 11758.2835921,
+ 11878.3716211,
+ 11592.4890449,
+ 11681.8255623,
+ 11664.8479948,
+ 11774.5958414,
+ 11366.1350817,
+ 11488.3634896,
+ 11323.3970324,
+ 11542.4997333,
+ 11506.8653177,
+ 11711.506161,
+ 11680.8204905,
+ 11970.4787405,
+ 11414.0337325,
+ 10245.296686,
+ 10511.8138807,
+ 10169.567221,
+ 10280.3517032,
+ 10369.5637386,
+ 10131.5166457,
+ 10242.3477803,
+ 10363.1390401,
+ 10400.9146854,
+ 10442.1706031,
+ 10323.7557975,
+ 10680.8374328,
+ 10796.9509861,
+ 10974.9048915,
+ 10948.9899152,
+ 10944.5858045,
+ 11094.3462761,
+ 10938.2712894,
+ 10462.2596185,
+ 10538.4603213,
+ 10246.18649281,
+ 10760.06625677,
+ 10692.71721234,
+ 10750.72357903,
+ 10775.26937624,
+ 10709.65218175,
+ 10844.64098118,
+ 10784.49157795,
+ 10619.45190766,
+ 10575.97504191,
+ 10549.32889962,
+ 10669.58254327,
+ 10793.33942751,
+ 10604.40588882,
+ 10668.96895539,
+ 10915.68573098,
+ 11064.45759247,
+ 11296.3614282,
+ 11384.1819535,
+ 11555.3628878,
+ 11425.8994007,
+ 11429.50688675,
+ 11495.34965037,
+ 11322.12268618,
+ 11358.10156733,
+ 11483.35971184,
+ 11742.03715033,
+ 11916.33514058,
+ 12823.68918938,
+ 12965.89129043,
+ 12931.53902256,
+ 13108.06261161,
+ 13031.17431056,
+ 13075.24769656,
+ 13654.21844012,
+ 13271.28536861,
+ 13437.8832414,
+ 13546.52226938,
+ 13780.99470249,
+ 13737.10982864,
+ 13550.4893841,
+ 13950.30084729,
+ 14133.70715301,
+ 15579.84846029,
+ 15565.88058083,
+ 14833.7541075,
+ 15479.56703842,
+ 15332.31559743,
+ 15290.90268148,
+ 15701.33973237,
+ 16276.34394919,
+ 16317.80819009,
+ 16068.13870685,
+ 15955.58743887,
+ 16716.11132377,
+ 17645.40576746,
+ 17804.00563217,
+ 17817.09024754,
+ 18621.31436938,
+ 18642.23276593,
+ 18370.00252365,
+ 18364.12159134,
+ 19107.46444977,
+ 18732.1207774,
+ 17150.62357809,
+ 17108.40172774,
+ 17717.4150112,
+ 18177.48341979,
+ 19625.83502949,
+ 18802.99829969,
+ 19201.09115697,
+ 19445.39847988,
+ 18699.76561337,
+ 19154.231131,
+ 19345.12095871,
+ 19191.63128698,
+ 18321.14491611,
+ 18553.91537685,
+ 18264.99210672,
+ 18058.90334725,
+ 18803.65687045,
+ 19142.3825335,
+ 19246.64434137,
+ 19417.07603342,
+ 21310.59813054,
+ 22805.16149213,
+ 23137.96056165,
+ 23869.83196434,
+ 23477.29519711,
+ 22803.0814087,
+ 23783.02850288,
+ 23241.34486501,
+ 23735.94972763,
+ 24664.79027412,
+ 26437.0375091,
+ 26272.29456706,
+ 27084.80788628,
+ 27362.4365573,
+ 28840.95341968,
+ 29001.71982218,
+ 29374.15188907,
+ 32127.26793922,
+ 32782.02446581,
+ 31971.91352155,
+ 33992.42934365,
+ 36824.36441009,
+ 39371.04235311,
+ 40797.61071993,
+ 40254.54649816,
+ 38356.43950662,
+ 35566.65594049,
+ 33922.9605815,
+ 37316.35939997,
+ 39187.32812109,
+ 36825.36585131,
+ 36178.13890106,
+ 35791.27792129,
+ 36630.07568284,
+ 36069.80639361,
+ 35547.7508855,
+ 30825.69850603,
+ 33005.76356216,
+ 32067.64288212,
+ 32289.37808687,
+ 32366.39304887,
+ 32569.84955679,
+ 30432.54707881,
+ 33466.09635821,
+ 34316.38765032,
+ 34269.52154165,
+ 33114.35774753,
+ 33537.1768196,
+ 35510.28903716,
+ 37472.09010368,
+ 36926.06446515,
+ 38144.30686267,
+ 39266.01073494,
+ 38903.44147971,
+ 46196.46371944,
+ 46481.10423596,
+ 44918.18449192,
+ 47909.33119483,
+ 47504.85118326,
+ 47105.51747252,
+ 48717.2902111,
+ 47945.05683234,
+ 49199.87134362,
+ 52149.00753587,
+ 51679.79669449,
+ 55888.13368221,
+ 56099.52051348,
+ 57539.9436679,
+ 54207.31906543,
+ 48824.42686909,
+ 49705.33331637,
+ 47093.85301914,
+ 46339.76008289,
+ 46188.45127539,
+ 45137.77046805,
+ 49631.24137077,
+ 48378.98805435,
+ 50538.24341445,
+ 48561.1661539,
+ 48927.3045548,
+ 48912.38173056,
+ 51206.69295308,
+ 52246.52230995,
+ 54824.11781138,
+ 56008.54940114,
+ 57805.12301924,
+ 57332.08896391,
+ 61243.08476552,
+ 59302.31697742,
+ 55907.20022619,
+ 56804.90123161,
+ 58870.89333325,
+ 57858.92070527,
+ 58346.65297359,
+ 58313.64260857,
+ 57523.42098673,
+ 54529.14561107,
+ 54738.94493032,
+ 52774.26369049,
+ 51704.1619252,
+ 55137.31372578,
+ 55973.51084173,
+ 55950.7457745,
+ 57750.19987147,
+ 58917.6930451,
+ 58918.83271375,
+ 59095.80797806,
+ 59384.3133586,
+ 57603.88917376,
+ 58758.55629127,
+ 59057.87896588,
+ 58192.35868406,
+ 56048.93781271,
+ 58323.95357975,
+ 58245.00300108,
+ 59793.23541009,
+ 60204.96491379,
+ 59893.45188869,
+ 63503.45793019,
+ 63109.69593464,
+ 63314.01084504,
+ 61572.78960116,
+ 60683.82123331,
+ 56216.18500243,
+ 55724.26709807,
+ 56473.0322808,
+ 53906.08804584,
+ 51762.27205146,
+ 51093.65070999,
+ 50050.86821565,
+ 49004.25326318,
+ 54021.75478737,
+ 55033.11801332,
+ 54824.70489507,
+ 53555.10849133,
+ 57750.17734563,
+ 57828.05063222,
+ 56631.07741255,
+ 57200.29122289,
+ 53333.53775274,
+ 57424.00594813,
+ 56396.51416376,
+ 57356.40187692,
+ 58803.77580865,
+ 58232.3161419,
+ 55859.79754454,
+ 56704.5730585,
+ 49150.53387514,
+ 49716.19160254,
+ 49880.53342038,
+ 46760.18656071,
+ 46456.05847448,
+ 43537.51138918,
+ 42909.40092517,
+ 37002.4404659,
+ 40782.73826245,
+ 37304.69067136,
+ 37536.63111241,
+ 34770.58362292,
+ 38705.97863723,
+ 38402.22385137,
+ 39294.19738214,
+ 38436.96853505,
+ 35697.60639024,
+ 34616.06800347,
+ 35678.12920411,
+ 37332.85368874,
+ 36684.92451667,
+ 37575.17957566,
+ 39208.76599489,
+ 36894.40532994,
+ 35551.95872588,
+ 35862.37772747,
+ 33560.70783776,
+ 33472.63174808,
+ 37345.12148619,
+ 36702.59937466,
+ 37334.39952553,
+ 35552.51714847,
+ 39097.86089667,
+ 40218.47785943,
+ 40406.26898673,
+ 38347.06322666,
+ 38053.50417253,
+ 35787.24478177,
+ 35615.86927002,
+ 35698.29644336,
+ 31676.69373254,
+ 32505.6598245,
+ 33723.0289781,
+ 34662.43589358,
+ 31637.78005541,
+ 32186.27767093,
+ 34649.64458753,
+ 34434.33531428,
+ 35867.77773549,
+ 35040.83724889,
+ 33572.11765253,
+ 33897.04858963,
+ 34668.54840182,
+ 35287.77976616,
+ 33746.00245614,
+ 34235.19345116],
+                        }, {
+                          name: '24 DMA',
+                          data: [9291.764999839166,
+ 9293.496049533334,
+ 9286.298796179168,
+ 9275.498108383334,
+ 9265.501898395833,
+ 9259.862706237916,
+ 9258.01250369875,
+ 9254.298864299582,
+ 9249.682516539166,
+ 9228.16211042,
+ 9208.23435516375,
+ 9201.793920023332,
+ 9198.502414579167,
+ 9198.557154614167,
+ 9212.286178420834,
+ 9228.19373087625,
+ 9244.45279532375,
+ 9261.073598880834,
+ 9279.773095007919,
+ 9312.346307205,
+ 9391.661702570416,
+ 9465.842331736667,
+ 9550.2808840675,
+ 9622.60336451125,
+ 9708.902902712916,
+ 9806.03872295875,
+ 9880.023972732915,
+ 9962.004843887084,
+ 10043.902618527083,
+ 10146.841076069584,
+ 10252.514384499167,
+ 10350.77518859,
+ 10457.492207159166,
+ 10563.471852174584,
+ 10677.085147410833,
+ 10770.897054585417,
+ 10870.860290576251,
+ 10980.023041609582,
+ 11079.772337077084,
+ 11177.286300411666,
+ 11273.608469232082,
+ 11386.838020176665,
+ 11483.259676356249,
+ 11560.472857400002,
+ 11597.45194995417,
+ 11625.771366387502,
+ 11649.994592929166,
+ 11673.062663966668,
+ 11691.8597231625,
+ 11675.4656527875,
+ 11693.580218979167,
+ 11696.790563041666,
+ 11710.815847016667,
+ 11700.809283954166,
+ 11697.964821604166,
+ 11701.270978933333,
+ 11710.289017558332,
+ 11699.384617108333,
+ 11631.350673804167,
+ 11593.904348937498,
+ 11534.930709137501,
+ 11472.272972208331,
+ 11413.968518845832,
+ 11341.710938666665,
+ 11272.941926883332,
+ 11194.139307375,
+ 11127.876034033334,
+ 11073.037992824999,
+ 11008.262333508334,
+ 10970.276849670832,
+ 10933.4070756625,
+ 10904.659446358333,
+ 10870.259199433332,
+ 10852.694646216665,
+ 10836.277262320833,
+ 10820.2303563625,
+ 10775.220351579168,
+ 10734.870143395832,
+ 10673.81515722125,
+ 10635.4503974825,
+ 10582.210333809167,
+ 10554.572410747916,
+ 10576.654606174583,
+ 10584.897868718333,
+ 10613.025942059166,
+ 10634.03177017375,
+ 10644.443777217917,
+ 10662.962877060001,
+ 10675.753757031667,
+ 10688.522236330416,
+ 10704.873267251667,
+ 10711.633070823334,
+ 10726.016952402084,
+ 10735.802298159584,
+ 10746.948406758333,
+ 10760.342429120834,
+ 10778.475430716668,
+ 10803.924475854166,
+ 10817.739189379166,
+ 10838.20733926875,
+ 10881.252757263333,
+ 10913.9053558,
+ 10960.235150571667,
+ 10990.372377866252,
+ 11034.094041949167,
+ 11082.661190347084,
+ 11168.012015894585,
+ 11262.021978756251,
+ 11348.97606381375,
+ 11445.791523549584,
+ 11546.279957003751,
+ 11650.416317614166,
+ 11779.786715135,
+ 11888.190999524166,
+ 11998.380325102917,
+ 12120.968507626249,
+ 12250.636247088749,
+ 12368.19558449125,
+ 12471.780242475834,
+ 12582.361051604583,
+ 12696.924601584165,
+ 12864.611500437915,
+ 13037.110716276666,
+ 13178.954350474582,
+ 13344.96340831,
+ 13512.054779612086,
+ 13675.921492701667,
+ 13851.670660223752,
+ 14040.60011017625,
+ 14223.9948205725,
+ 14359.18021713375,
+ 14483.750889985417,
+ 14641.441402535835,
+ 14830.497367362916,
+ 15029.365339096667,
+ 15226.942112054167,
+ 15433.90444244,
+ 15657.693917328334,
+ 15863.198887422084,
+ 16063.932192503751,
+ 16285.868431973751,
+ 16493.993888172085,
+ 16643.999479588332,
+ 16775.587016273752,
+ 16924.908177031666,
+ 17033.142967010834,
+ 17202.307735705,
+ 17367.692910379585,
+ 17522.756415319167,
+ 17694.134868754587,
+ 17836.17082425,
+ 17980.041299192915,
+ 18107.907007922917,
+ 18227.649636960003,
+ 18321.524895679166,
+ 18429.788559761666,
+ 18494.32525905125,
+ 18511.554324875833,
+ 18553.206459804165,
+ 18608.426971719167,
+ 18634.48238721875,
+ 18666.767523364168,
+ 18789.292340317916,
+ 18974.3356695175,
+ 19142.2730075125,
+ 19356.344306968334,
+ 19619.9556244275,
+ 19857.2339444675,
+ 20109.967839954166,
+ 20320.962066838332,
+ 20492.2168459275,
+ 20736.458178195415,
+ 21037.9559428675,
+ 21322.4099465,
+ 21671.786707871248,
+ 22013.79526730042,
+ 22409.454953174165,
+ 22818.20864214083,
+ 23278.750599347502,
+ 23844.30695611292,
+ 24449.183304408332,
+ 25028.892061670835,
+ 25661.7575813875,
+ 26398.506826245415,
+ 27237.02341006792,
+ 28127.879022005833,
+ 28917.210203990002,
+ 29565.180121260415,
+ 30083.042428712084,
+ 30501.922787760417,
+ 31078.550462879586,
+ 31761.227409229166,
+ 32304.658132080414,
+ 32843.69121691584,
+ 33345.99655831833,
+ 33844.550117015,
+ 34245.91548720292,
+ 34632.39283380458,
+ 34788.26327629417,
+ 35023.40190149667,
+ 35157.847295765,
+ 35294.83305679375,
+ 35419.509771785415,
+ 35437.9506725175,
+ 35340.0557813925,
+ 35402.31339958667,
+ 35415.811662364584,
+ 35309.35987617959,
+ 35048.66468428042,
+ 34746.146605099995,
+ 34548.469210891664,
+ 34511.6213191025,
+ 34568.263340963334,
+ 34744.15276934542,
+ 34825.38824163583,
+ 34813.55963157833,
+ 35204.02204275042,
+ 35633.312265037915,
+ 36013.60003881416,
+ 36483.56901848042,
+ 36960.02921804917,
+ 37441.60282584167,
+ 38187.08581355292,
+ 38809.55636647708,
+ 39523.39921903959,
+ 40350.88377941458,
+ 41155.608931315415,
+ 42127.204103207914,
+ 43196.6613296525,
+ 44199.738300889585,
+ 45028.5271098525,
+ 45634.98149849583,
+ 46326.2721471975,
+ 46891.133655511665,
+ 47342.361615750415,
+ 47705.54333123833,
+ 48047.69774802583,
+ 48526.32001919667,
+ 48906.027407505426,
+ 49390.81082145291,
+ 49489.340089555415,
+ 49591.265102840414,
+ 49757.68998778375,
+ 49895.080061044166,
+ 50092.64969132291,
+ 50414.25803877541,
+ 50718.06050502709,
+ 51128.89659614792,
+ 51467.73899699334,
+ 51846.658881562085,
+ 52164.263893350835,
+ 52165.05833268334,
+ 52194.449195938745,
+ 52249.905431994994,
+ 52402.055500321665,
+ 52798.8149213425,
+ 53157.494475184176,
+ 53592.059807167076,
+ 53933.28420417459,
+ 54289.554773129996,
+ 54607.74199073167,
+ 54694.11368049958,
+ 54975.710583475826,
+ 55202.180059612496,
+ 55510.07921047084,
+ 55877.69984866542,
+ 56294.587820104585,
+ 56615.92697679917,
+ 56901.313879637084,
+ 57091.32202743792,
+ 57157.794517963746,
+ 57197.520904298326,
+ 57269.42882104708,
+ 57142.315234319576,
+ 57006.75776912333,
+ 57107.45582552167,
+ 57167.460065916246,
+ 57205.89098578459,
+ 57303.642827806245,
+ 57368.092782602085,
+ 57584.33508766958,
+ 57817.0965438325,
+ 58183.13259524791,
+ 58467.87612319958,
+ 58797.44102081708,
+ 58985.441982368335,
+ 59009.898372880416,
+ 59030.711766175,
+ 58945.5176941475,
+ 58696.020701647074,
+ 58370.018937684166,
+ 58000.52041693,
+ 57580.038970476664,
+ 57356.59903000874,
+ 57249.48356499042,
+ 57085.57309014875,
+ 56856.2909870425,
+ 56837.86676460792,
+ 56911.99646542084,
+ 56841.459958454165,
+ 56797.930301029584,
+ 56528.77623197334,
+ 56412.902941737506,
+ 56267.19720319876,
+ 56011.069867645834,
+ 55831.65652906292,
+ 55619.91924976542,
+ 55381.877914072924,
+ 55216.07590678917,
+ 54921.67377648541,
+ 54671.337297505,
+ 54396.64984498749,
+ 54098.903949773754,
+ 53877.81171739959,
+ 53562.972579032496,
+ 53265.41144192917,
+ 52765.33590870916,
+ 52213.71022017084,
+ 51475.02574758916,
+ 50754.68933997833,
+ 49972.00080379459,
+ 49178.49252427791,
+ 48369.08307507584,
+ 47646.71307380875,
+ 46864.90796181542,
+ 46130.077488377916,
+ 45179.746740683746,
+ 44316.48070069833,
+ 43482.1661928575,
+ 42560.547389025,
+ 41699.83336543167,
+ 41006.04038419625,
+ 40180.61672883959,
+ 39614.00943095375,
+ 39036.76718615916,
+ 38356.77445355,
+ 37803.12633635708,
+ 37423.503961844996,
+ 37138.71596124,
+ 36906.424236255,
+ 36846.01076469542,
+ 36775.80754112125,
+ 36897.21534062416,
+ 37016.78358538749,
+ 37165.80356887666,
+ 37138.617132847496,
+ 37029.65967161417,
+ 36876.39600027583,
+ 36762.28466312208,
+ 36594.746635717915,
+ 36506.812961594165,
+ 36425.35045217709,
+ 36314.083044045416,
+ 36103.785358159585,
+ 35879.247778795834,
+ 35689.284386822495,
+ 35586.78146950333,
+ 35599.94059490375,
+ 35565.70974162958,
+ 35566.185150578334,
+ 35583.869185642914,
+ 35472.3453071275,
+ 35413.394490106664,
+ 35263.87794554875,
+ 35208.98945816083]
+                        }, {
+                          name: '50 DMA',
+                          data: [9390.3081184594,
+ 9384.2940217714,
+ 9379.393756764199,
+ 9383.334673657799,
+ 9384.4900498312,
+ 9385.834298281,
+ 9394.899215368,
+ 9401.624788468,
+ 9408.7804746102,
+ 9407.8046729164,
+ 9400.317495815001,
+ 9394.715806112199,
+ 9384.4238629268,
+ 9378.4873118596,
+ 9362.639700397202,
+ 9362.5508864222,
+ 9361.0379713452,
+ 9355.7630931514,
+ 9355.9947073156,
+ 9361.0244669896,
+ 9385.6648866376,
+ 9408.4915579744,
+ 9434.5869165878,
+ 9459.4093133302,
+ 9499.4430157804,
+ 9545.0179954058,
+ 9576.584726659,
+ 9613.7759443142,
+ 9648.8797629338,
+ 9693.059732071799,
+ 9739.050089895,
+ 9782.842734947599,
+ 9832.163276897,
+ 9879.031248523,
+ 9930.5208807472,
+ 9965.7570421014,
+ 10004.8625663098,
+ 10054.2731071262,
+ 10104.354258650601,
+ 10158.4098779734,
+ 10215.358140101,
+ 10277.5745344462,
+ 10333.5821100648,
+ 10385.987913901601,
+ 10438.988834518801,
+ 10488.3704123304,
+ 10540.2608453558,
+ 10590.9080462416,
+ 10644.9211056824,
+ 10684.7343121314,
+ 10729.456031846199,
+ 10767.357310798201,
+ 10812.6479473358,
+ 10857.209096345801,
+ 10906.632293035002,
+ 10954.7187058414,
+ 11009.256003549603,
+ 11052.6724098712,
+ 11073.721596234402,
+ 11101.313316589798,
+ 11121.6768162172,
+ 11144.103052174998,
+ 11167.777988698599,
+ 11187.123694318598,
+ 11204.472899363001,
+ 11221.2284111656,
+ 11237.625264645401,
+ 11255.7308229948,
+ 11268.663668999001,
+ 11284.177072714,
+ 11280.298624440002,
+ 11281.540261260001,
+ 11278.510697058,
+ 11275.17812735,
+ 11270.595724458,
+ 11254.169294832,
+ 11242.342209182,
+ 11228.18444011,
+ 11208.9903116082,
+ 11189.251180119601,
+ 11167.510059218399,
+ 11150.495076506999,
+ 11130.9195477618,
+ 11111.5978045308,
+ 11090.928397648402,
+ 11078.4077156574,
+ 11059.0980622866,
+ 11034.934815334798,
+ 11010.543980941202,
+ 10986.621660406601,
+ 10964.6323676948,
+ 10931.632447305201,
+ 10905.187161501,
+ 10888.3352042786,
+ 10872.056923706,
+ 10866.134371372,
+ 10860.181499196,
+ 10857.991797056,
+ 10851.017868242,
+ 10852.285304343,
+ 10852.4250275584,
+ 10852.399540634,
+ 10848.711577314602,
+ 10848.2414651974,
+ 10848.852084983999,
+ 10853.5623779856,
+ 10870.626586963199,
+ 10901.6637381218,
+ 10955.388584852999,
+ 11007.3135594712,
+ 11064.545701262401,
+ 11120.443621129602,
+ 11186.13671516,
+ 11248.932089618202,
+ 11312.842798840198,
+ 11376.510463425799,
+ 11444.1120637676,
+ 11510.010848278402,
+ 11574.545520010399,
+ 11639.9347883002,
+ 11706.6699116384,
+ 11798.7687830142,
+ 11891.1065963268,
+ 11968.8899623868,
+ 12056.5943776332,
+ 12144.475263793802,
+ 12241.0481250534,
+ 12344.305713274798,
+ 12464.908862402403,
+ 12576.0637010688,
+ 12683.572130958999,
+ 12787.669408155802,
+ 12906.486247106399,
+ 13045.201318820598,
+ 13184.388611840399,
+ 13325.0405852322,
+ 13485.0778344666,
+ 13646.402988947002,
+ 13802.816461427597,
+ 13956.707242389,
+ 14122.989742834201,
+ 14285.5440406058,
+ 14415.1771330598,
+ 14539.031452995001,
+ 14672.090601369599,
+ 14809.713041201401,
+ 14974.5461027212,
+ 15119.498810959,
+ 15275.0026460844,
+ 15435.320477947002,
+ 15579.408797207,
+ 15736.050966103401,
+ 15895.791353931,
+ 16049.9567854338,
+ 16181.538940749399,
+ 16314.290545474802,
+ 16423.1166038216,
+ 16524.976844958,
+ 16642.4192019158,
+ 16763.1056003536,
+ 16887.4150009698,
+ 17014.251567707,
+ 17167.3791615154,
+ 17358.0566839858,
+ 17552.0582303908,
+ 17758.52442429,
+ 17952.4504341824,
+ 18133.7698657836,
+ 18338.4206481592,
+ 18524.2415285136,
+ 18716.286380006,
+ 18897.9852162826,
+ 19115.408354848,
+ 19344.1791640392,
+ 19576.2839809964,
+ 19816.886400193802,
+ 20087.8874149578,
+ 20353.895016754002,
+ 20615.851175551597,
+ 20932.0403705342,
+ 21266.3180857134,
+ 21586.644607366998,
+ 21932.170967764603,
+ 22315.750140617198,
+ 22747.090875036,
+ 23206.701284483803,
+ 23639.365927059403,
+ 24033.650061873203,
+ 24377.58313021,
+ 24688.7599100132,
+ 25052.937809017203,
+ 25462.041955891,
+ 25855.536801355403,
+ 26236.931544821797,
+ 26598.4088030236,
+ 26967.4606482846,
+ 27296.340075567,
+ 27631.2351272832,
+ 27863.727274264398,
+ 28134.93457591,
+ 28402.292121285,
+ 28664.995060402398,
+ 28925.4205022056,
+ 29192.9848676018,
+ 29435.2129108558,
+ 29733.456530483003,
+ 30054.484441354998,
+ 30378.696805243002,
+ 30664.910822784597,
+ 30952.806708506596,
+ 31278.079602422404,
+ 31639.1798838276,
+ 31951.4892105198,
+ 32258.2721179306,
+ 32580.8331213964,
+ 32881.5053117038,
+ 33335.888682150406,
+ 33809.4491386956,
+ 34232.1522584764,
+ 34725.5119850728,
+ 35200.8900141854,
+ 35649.7045581534,
+ 36095.3096121934,
+ 36528.764857499,
+ 36971.0661266458,
+ 37466.797546217196,
+ 37923.5744117134,
+ 38461.302688914,
+ 38995.8100614022,
+ 39504.0635759758,
+ 39932.5694679682,
+ 40269.619734919004,
+ 40583.877814373394,
+ 40789.2675865544,
+ 40928.641941149996,
+ 41036.458752259205,
+ 41134.123231656995,
+ 41359.61926894,
+ 41615.865911217195,
+ 41948.1715678762,
+ 42173.0677029548,
+ 42367.867231628996,
+ 42609.607549214,
+ 42910.1786302544,
+ 43239.2835180276,
+ 43603.1643605984,
+ 44001.939220749,
+ 44447.086663423805,
+ 44977.2144725814,
+ 45541.960896648605,
+ 46086.654378554595,
+ 46559.010821341,
+ 47047.78098499579,
+ 47573.801860525,
+ 48122.3293330542,
+ 48619.940465361804,
+ 49099.8855645268,
+ 49564.963553428395,
+ 49993.2593106992,
+ 50417.294672913595,
+ 50762.5741659802,
+ 51047.2156024106,
+ 51411.440587623205,
+ 51768.024667204394,
+ 52101.719367995596,
+ 52478.65453583081,
+ 52733.079122343996,
+ 52981.8336918998,
+ 53265.3861616226,
+ 53494.885804898,
+ 53696.866564708,
+ 53929.927341083,
+ 54136.73911617859,
+ 54341.685153213,
+ 54478.6664825948,
+ 54602.1654034724,
+ 54733.469529604205,
+ 54811.57156416181,
+ 54893.68045216801,
+ 54940.7506165838,
+ 55126.673393879,
+ 55412.37877519,
+ 55684.552325763405,
+ 55974.13105740379,
+ 56261.01228041221,
+ 56461.566954953,
+ 56673.296887553406,
+ 56810.132705754004,
+ 56920.6747055838,
+ 56945.155278324004,
+ 56995.804969445795,
+ 57018.27624266281,
+ 57020.113673315194,
+ 57076.414910001,
+ 57132.1468240684,
+ 57132.1585657422,
+ 57083.089747546,
+ 57081.9908340738,
+ 57091.91006743999,
+ 56999.6699203806,
+ 56957.62940529,
+ 56906.156155821,
+ 56918.53825015141,
+ 56869.05066676161,
+ 56859.0002901946,
+ 56868.142746895806,
+ 56866.5162175624,
+ 56833.2437487186,
+ 56876.7522976672,
+ 56764.9840765636,
+ 56703.8226348046,
+ 56667.3500647082,
+ 56499.807521406794,
+ 56309.45847406181,
+ 56061.193786355405,
+ 55764.377807429395,
+ 55326.0727558454,
+ 54963.3508668194,
+ 54527.528520685395,
+ 54090.57487576161,
+ 53633.9087647448,
+ 53232.857211664,
+ 52819.7441093738,
+ 52441.7808833354,
+ 52089.5414977822,
+ 51637.01455399199,
+ 51164.435854039795,
+ 50682.1337299202,
+ 50224.69150541919,
+ 49760.5209579788,
+ 49241.9553908882,
+ 48763.936792093205,
+ 48235.544681791194,
+ 47715.1280642856,
+ 47218.699194168796,
+ 46765.589650875394,
+ 46320.5569438756,
+ 45937.998727983395,
+ 45593.92895455981,
+ 45305.3715040412,
+ 44994.548832810804,
+ 44775.4886864312,
+ 44599.773178356205,
+ 44327.4634623434,
+ 43993.7423666102,
+ 43658.318352159404,
+ 43302.96107796821,
+ 42860.274916455994,
+ 42417.6798326788,
+ 41918.5921590786,
+ 41424.6995311108,
+ 41032.489355618,
+ 40577.257954527,
+ 40082.08327236,
+ 39578.6807882402,
+ 39095.5981638178,
+ 38619.6385472654,
+ 38219.7981510844,
+ 37786.5234348922,
+ 37474.95511044,
+ 37158.5722501818,
+ 36854.3325498106,
+ 36624.8844139196,
+ 36370.6832935528,
+ 36184.6369347924]
+                        }],
+                        chart: {
+                          height: 350,
+                          type: 'line',
+                          toolbar: {
+                            show: false
+                          },
+                        },
+                        // markers: {
+                        //   size: 4
+                        // },
+                        colors: ['#4154f1', '#2eca6a', '#ff771d'],
+                        // fill: {
+                        //   type: "gradient",
+                        //   gradient: {
+                        //     shadeIntensity: 1,
+                        //     opacityFrom: 0.3,
+                        //     opacityTo: 0.4,
+                        //     stops: [0, 90, 100]
+                        //   }
+                        // },
+                        dataLabels: {
+                          enabled: false
+                        },
+                        stroke: {
+                          curve: 'straight',
+                          width: 2
+                        },
+                        xaxis: {
+                          type: 'datetime',
+                          categories: ['2020-07-07 23:59:59',
+ '2020-07-08 23:59:59',
+ '2020-07-09 23:59:59',
+ '2020-07-10 23:59:59',
+ '2020-07-11 23:59:59',
+ '2020-07-12 23:59:59',
+ '2020-07-13 23:59:59',
+ '2020-07-14 23:59:59',
+ '2020-07-15 23:59:59',
+ '2020-07-16 23:59:59',
+ '2020-07-17 23:59:59',
+ '2020-07-18 23:59:59',
+ '2020-07-19 23:59:59',
+ '2020-07-20 23:59:59',
+ '2020-07-21 23:59:59',
+ '2020-07-22 23:59:59',
+ '2020-07-23 23:59:59',
+ '2020-07-24 23:59:59',
+ '2020-07-25 23:59:59',
+ '2020-07-26 23:59:59',
+ '2020-07-27 23:59:59',
+ '2020-07-28 23:59:59',
+ '2020-07-29 23:59:59',
+ '2020-07-30 23:59:59',
+ '2020-07-31 23:59:59',
+ '2020-08-01 23:59:59',
+ '2020-08-02 23:59:59',
+ '2020-08-03 23:59:59',
+ '2020-08-04 23:59:59',
+ '2020-08-05 23:59:59',
+ '2020-08-06 23:59:59',
+ '2020-08-07 23:59:59',
+ '2020-08-08 23:59:59',
+ '2020-08-09 23:59:59',
+ '2020-08-10 23:59:59',
+ '2020-08-11 23:59:59',
+ '2020-08-12 23:59:59',
+ '2020-08-13 23:59:59',
+ '2020-08-14 23:59:59',
+ '2020-08-15 23:59:59',
+ '2020-08-16 23:59:59',
+ '2020-08-17 23:59:59',
+ '2020-08-18 23:59:59',
+ '2020-08-19 23:59:59',
+ '2020-08-20 23:59:59',
+ '2020-08-21 23:59:59',
+ '2020-08-22 23:59:59',
+ '2020-08-23 23:59:59',
+ '2020-08-24 23:59:59',
+ '2020-08-25 23:59:59',
+ '2020-08-26 23:59:59',
+ '2020-08-27 23:59:59',
+ '2020-08-28 23:59:59',
+ '2020-08-29 23:59:59',
+ '2020-08-30 23:59:59',
+ '2020-08-31 23:59:59',
+ '2020-09-01 23:59:59',
+ '2020-09-02 23:59:59',
+ '2020-09-03 23:59:59',
+ '2020-09-04 23:59:59',
+ '2020-09-05 23:59:59',
+ '2020-09-06 23:59:59',
+ '2020-09-07 23:59:59',
+ '2020-09-08 23:59:59',
+ '2020-09-09 23:59:59',
+ '2020-09-10 23:59:59',
+ '2020-09-11 23:59:59',
+ '2020-09-12 23:59:59',
+ '2020-09-13 23:59:59',
+ '2020-09-14 23:59:59',
+ '2020-09-15 23:59:59',
+ '2020-09-16 23:59:59',
+ '2020-09-17 23:59:59',
+ '2020-09-18 23:59:59',
+ '2020-09-19 23:59:59',
+ '2020-09-20 23:59:59',
+ '2020-09-21 23:59:59',
+ '2020-09-22 23:59:59',
+ '2020-09-23 23:59:59',
+ '2020-09-24 23:59:59',
+ '2020-09-25 23:59:59',
+ '2020-09-26 23:59:59',
+ '2020-09-27 23:59:59',
+ '2020-09-28 23:59:59',
+ '2020-09-29 23:59:59',
+ '2020-09-30 23:59:59',
+ '2020-10-01 23:59:59',
+ '2020-10-02 23:59:59',
+ '2020-10-03 23:59:59',
+ '2020-10-04 23:59:59',
+ '2020-10-05 23:59:59',
+ '2020-10-06 23:59:59',
+ '2020-10-07 23:59:59',
+ '2020-10-08 23:59:59',
+ '2020-10-09 23:59:59',
+ '2020-10-10 23:59:59',
+ '2020-10-11 23:59:59',
+ '2020-10-12 23:59:59',
+ '2020-10-13 23:59:59',
+ '2020-10-14 23:59:59',
+ '2020-10-15 23:59:59',
+ '2020-10-16 23:59:59',
+ '2020-10-17 23:59:59',
+ '2020-10-18 23:59:59',
+ '2020-10-19 23:59:59',
+ '2020-10-20 23:59:59',
+ '2020-10-21 23:59:59',
+ '2020-10-22 23:59:59',
+ '2020-10-23 23:59:59',
+ '2020-10-24 23:59:59',
+ '2020-10-25 23:59:59',
+ '2020-10-26 23:59:59',
+ '2020-10-27 23:59:59',
+ '2020-10-28 23:59:59',
+ '2020-10-29 23:59:59',
+ '2020-10-30 23:59:59',
+ '2020-10-31 23:59:59',
+ '2020-11-01 23:59:59',
+ '2020-11-02 23:59:59',
+ '2020-11-03 23:59:59',
+ '2020-11-04 23:59:59',
+ '2020-11-05 23:59:59',
+ '2020-11-06 23:59:59',
+ '2020-11-07 23:59:59',
+ '2020-11-08 23:59:59',
+ '2020-11-09 23:59:59',
+ '2020-11-10 23:59:59',
+ '2020-11-11 23:59:59',
+ '2020-11-12 23:59:59',
+ '2020-11-13 23:59:59',
+ '2020-11-14 23:59:59',
+ '2020-11-15 23:59:59',
+ '2020-11-16 23:59:59',
+ '2020-11-17 23:59:59',
+ '2020-11-18 23:59:59',
+ '2020-11-19 23:59:59',
+ '2020-11-20 23:59:59',
+ '2020-11-21 23:59:59',
+ '2020-11-22 23:59:59',
+ '2020-11-23 23:59:59',
+ '2020-11-24 23:59:59',
+ '2020-11-25 23:59:59',
+ '2020-11-26 23:59:59',
+ '2020-11-27 23:59:59',
+ '2020-11-28 23:59:59',
+ '2020-11-29 23:59:59',
+ '2020-11-30 23:59:59',
+ '2020-12-01 23:59:59',
+ '2020-12-02 23:59:59',
+ '2020-12-03 23:59:59',
+ '2020-12-04 23:59:59',
+ '2020-12-05 23:59:59',
+ '2020-12-06 23:59:59',
+ '2020-12-07 23:59:59',
+ '2020-12-08 23:59:59',
+ '2020-12-09 23:59:59',
+ '2020-12-10 23:59:59',
+ '2020-12-11 23:59:59',
+ '2020-12-12 23:59:59',
+ '2020-12-13 23:59:59',
+ '2020-12-14 23:59:59',
+ '2020-12-15 23:59:59',
+ '2020-12-16 23:59:59',
+ '2020-12-17 23:59:59',
+ '2020-12-18 23:59:59',
+ '2020-12-19 23:59:59',
+ '2020-12-20 23:59:59',
+ '2020-12-21 23:59:59',
+ '2020-12-22 23:59:59',
+ '2020-12-23 23:59:59',
+ '2020-12-24 23:59:59',
+ '2020-12-25 23:59:59',
+ '2020-12-26 23:59:59',
+ '2020-12-27 23:59:59',
+ '2020-12-28 23:59:59',
+ '2020-12-29 23:59:59',
+ '2020-12-30 23:59:59',
+ '2020-12-31 23:59:59',
+ '2021-01-01 23:59:59',
+ '2021-01-02 23:59:59',
+ '2021-01-03 23:59:59',
+ '2021-01-04 23:59:59',
+ '2021-01-05 23:59:59',
+ '2021-01-06 23:59:59',
+ '2021-01-07 23:59:59',
+ '2021-01-08 23:59:59',
+ '2021-01-09 23:59:59',
+ '2021-01-10 23:59:59',
+ '2021-01-11 23:59:59',
+ '2021-01-12 23:59:59',
+ '2021-01-13 23:59:59',
+ '2021-01-14 23:59:59',
+ '2021-01-15 23:59:59',
+ '2021-01-16 23:59:59',
+ '2021-01-17 23:59:59',
+ '2021-01-18 23:59:59',
+ '2021-01-19 23:59:59',
+ '2021-01-20 23:59:59',
+ '2021-01-21 23:59:59',
+ '2021-01-22 23:59:59',
+ '2021-01-23 23:59:59',
+ '2021-01-24 23:59:59',
+ '2021-01-25 23:59:59',
+ '2021-01-26 23:59:59',
+ '2021-01-27 23:59:59',
+ '2021-01-28 23:59:59',
+ '2021-01-29 23:59:59',
+ '2021-01-30 23:59:59',
+ '2021-01-31 23:59:59',
+ '2021-02-01 23:59:59',
+ '2021-02-02 23:59:59',
+ '2021-02-03 23:59:59',
+ '2021-02-04 23:59:59',
+ '2021-02-05 23:59:59',
+ '2021-02-06 23:59:59',
+ '2021-02-07 23:59:59',
+ '2021-02-08 23:59:59',
+ '2021-02-09 23:59:59',
+ '2021-02-10 23:59:59',
+ '2021-02-11 23:59:59',
+ '2021-02-12 23:59:59',
+ '2021-02-13 23:59:59',
+ '2021-02-14 23:59:59',
+ '2021-02-15 23:59:59',
+ '2021-02-16 23:59:59',
+ '2021-02-17 23:59:59',
+ '2021-02-18 23:59:59',
+ '2021-02-19 23:59:59',
+ '2021-02-20 23:59:59',
+ '2021-02-21 23:59:59',
+ '2021-02-22 23:59:59',
+ '2021-02-23 23:59:59',
+ '2021-02-24 23:59:59',
+ '2021-02-25 23:59:59',
+ '2021-02-26 23:59:59',
+ '2021-02-27 23:59:59',
+ '2021-02-28 23:59:59',
+ '2021-03-01 23:59:59',
+ '2021-03-02 23:59:59',
+ '2021-03-03 23:59:59',
+ '2021-03-04 23:59:59',
+ '2021-03-05 23:59:59',
+ '2021-03-06 23:59:59',
+ '2021-03-07 23:59:59',
+ '2021-03-08 23:59:59',
+ '2021-03-09 23:59:59',
+ '2021-03-10 23:59:59',
+ '2021-03-11 23:59:59',
+ '2021-03-12 23:59:59',
+ '2021-03-13 23:59:59',
+ '2021-03-14 23:59:59',
+ '2021-03-15 23:59:59',
+ '2021-03-16 23:59:59',
+ '2021-03-17 23:59:59',
+ '2021-03-18 23:59:59',
+ '2021-03-19 23:59:59',
+ '2021-03-20 23:59:59',
+ '2021-03-21 23:59:59',
+ '2021-03-22 23:59:59',
+ '2021-03-23 23:59:59',
+ '2021-03-24 23:59:59',
+ '2021-03-25 23:59:59',
+ '2021-03-26 23:59:59',
+ '2021-03-27 23:59:59',
+ '2021-03-28 23:59:59',
+ '2021-03-29 23:59:59',
+ '2021-03-30 23:59:59',
+ '2021-03-31 23:59:59',
+ '2021-04-01 23:59:59',
+ '2021-04-02 23:59:59',
+ '2021-04-03 23:59:59',
+ '2021-04-04 23:59:59',
+ '2021-04-05 23:59:59',
+ '2021-04-06 23:59:59',
+ '2021-04-07 23:59:59',
+ '2021-04-08 23:59:59',
+ '2021-04-09 23:59:59',
+ '2021-04-10 23:59:59',
+ '2021-04-11 23:59:59',
+ '2021-04-12 23:59:59',
+ '2021-04-13 23:59:59',
+ '2021-04-14 23:59:59',
+ '2021-04-15 23:59:59',
+ '2021-04-16 23:59:59',
+ '2021-04-17 23:59:59',
+ '2021-04-18 23:59:59',
+ '2021-04-19 23:59:59',
+ '2021-04-20 23:59:59',
+ '2021-04-21 23:59:59',
+ '2021-04-22 23:59:59',
+ '2021-04-23 23:59:59',
+ '2021-04-24 23:59:59',
+ '2021-04-25 23:59:59',
+ '2021-04-26 23:59:59',
+ '2021-04-27 23:59:59',
+ '2021-04-28 23:59:59',
+ '2021-04-29 23:59:59',
+ '2021-04-30 23:59:59',
+ '2021-05-01 23:59:59',
+ '2021-05-02 23:59:59',
+ '2021-05-03 23:59:59',
+ '2021-05-04 23:59:59',
+ '2021-05-05 23:59:59',
+ '2021-05-06 23:59:59',
+ '2021-05-07 23:59:59',
+ '2021-05-08 23:59:59',
+ '2021-05-09 23:59:59',
+ '2021-05-10 23:59:59',
+ '2021-05-11 23:59:59',
+ '2021-05-12 23:59:59',
+ '2021-05-13 23:59:59',
+ '2021-05-14 23:59:59',
+ '2021-05-15 23:59:59',
+ '2021-05-16 23:59:59',
+ '2021-05-17 23:59:59',
+ '2021-05-18 23:59:59',
+ '2021-05-19 23:59:59',
+ '2021-05-20 23:59:59',
+ '2021-05-21 23:59:59',
+ '2021-05-22 23:59:59',
+ '2021-05-23 23:59:59',
+ '2021-05-24 23:59:59',
+ '2021-05-25 23:59:59',
+ '2021-05-26 23:59:59',
+ '2021-05-27 23:59:59',
+ '2021-05-28 23:59:59',
+ '2021-05-29 23:59:59',
+ '2021-05-30 23:59:59',
+ '2021-05-31 23:59:59',
+ '2021-06-01 23:59:59',
+ '2021-06-02 23:59:59',
+ '2021-06-03 23:59:59',
+ '2021-06-04 23:59:59',
+ '2021-06-05 23:59:59',
+ '2021-06-06 23:59:59',
+ '2021-06-07 23:59:59',
+ '2021-06-08 23:59:59',
+ '2021-06-09 23:59:59',
+ '2021-06-10 23:59:59',
+ '2021-06-11 23:59:59',
+ '2021-06-12 23:59:59',
+ '2021-06-13 23:59:59',
+ '2021-06-14 23:59:59',
+ '2021-06-15 23:59:59',
+ '2021-06-16 23:59:59',
+ '2021-06-17 23:59:59',
+ '2021-06-18 23:59:59',
+ '2021-06-19 23:59:59',
+ '2021-06-20 23:59:59',
+ '2021-06-21 23:59:59',
+ '2021-06-22 23:59:59',
+ '2021-06-23 23:59:59',
+ '2021-06-24 23:59:59',
+ '2021-06-25 23:59:59',
+ '2021-06-26 23:59:59',
+ '2021-06-27 23:59:59',
+ '2021-06-28 23:59:59',
+ '2021-06-29 23:59:59',
+ '2021-06-30 23:59:59',
+ '2021-07-01 23:59:59',
+ '2021-07-02 23:59:59',
+ '2021-07-03 23:59:59',
+ '2021-07-04 23:59:59',
+ '2021-07-05 23:59:59',
+ '2021-07-06 23:59:59']
+                        },
+                        tooltip: {
+                          x: {
+                            format: 'dd/MM/yy HH:mm'
+                          },
+                        }
+                      }).render();
+                    });
+                  </script>
+                  <!-- End Line Chart -->
+
+                </div>
+
+              </div>
+            </div><!-- End Reports -->
+
+            <!-- Recent Sales -->
+            <div class="col-12">
+              <div class="card recent-sales">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Payment History <span></span></h5>
+
+                  <table class="table table-borderless datatable">
+                    <thead>
+                      <tr>
+                        <!-- <th scope="col">#</th> -->
+                        <th scope="col">Place</th>
+                        <!-- <th scope="col">Product</th> -->
+                        <th scope="col">Price</th>
+                        <th scope="col">Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <!-- <th scope="row"><a href="#">#2457</a></th> -->
+                        <td>Walmart.ltd</td>
+                        <!-- <td><a href="#" class="text-primary">At praesentium minu</a></td> -->
+                        <td>INR 997</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                      </tr>
+                      <tr>
+                        <!-- <th scope="row"><a href="#">#2147</a></th> -->
+                        <td>Apple Store</td>
+                        <!-- <td><a href="#" class="text-primary">Blanditiis dolor omnis similique</a></td> -->
+                        <td>INR 5999</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                      </tr>
+                      <tr>
+                        <!-- <th scope="row"><a href="#">#2049</a></th> -->
+                        <td>Krishna Dairy</td>
+                        <!-- <td><a href="#" class="text-primary">At recusandae consectetur</a></td> -->
+                        <td>INR 47</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                      </tr>
+                      <tr>
+                        <!-- <th scope="row"><a href="#">#2644</a></th> -->
+                        <td>Bharat Electricals</td>
+                        <!-- <td><a href="#" class="text-primar">Ut voluptatem id earum et</a></td> -->
+                        <td>INR 68</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                      </tr>
+                      <tr>
+                        <!-- <th scope="row"><a href="#">#2644</a></th> -->
+                        <td>Bharat Petroleum</td>
+                        <!-- <td><a href="#" class="text-primary">Sunt similique distinctio</a></td> -->
+                        <td>INR 107</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+
+              </div>
+            </div><!-- End Recent Sales -->
+
+            <!-- Top Selling -->
+            <div class="col-12">
+              <div class="card top-selling">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                  </ul>
+                </div>
+
+                <!-- Top Gainers -->
+
+                <div class="card-body pb-0">
+                  <h5 class="card-title">Top Gainers <span>| Today</span></h5>
+
+                  <table class="table table-borderless">
+                    <thead>
+                      <tr>
+                        <th scope="col">Preview</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Price in INR</th>
+                        <th scope="col">Gain</th>
+                        <!-- <th scope="col">Revenue</th> -->
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><a href="#"><img src="Dashboard-assets/img/iconforall.PNG" alt=""></a></th>
+                        <td><a href="#" class="text-primary fw-bold">DogeCoin</a></td>
+                        <td>24.901784</td>
+                        <td class="fw-bold" id = "up-index">+24.06% <style>.fw-bold{color: lightgreen;}</style></td>
+                        <!-- <td>$5,828</td> -->
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#"><img src="Dashboard-assets/img/iconforall.PNG" alt=""></a></th>
+                        <td><a href="#" class="text-primary fw-bold">Loopring</a></td>
+                        <td>38.3661</td>
+                        <td class="fw-bold">+22.22%</td>
+                        <!-- <td>$4,508</td> -->
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#"><img src="Dashboard-assets/img/iconforall.PNG" alt=""></a></th>
+                        <td><a href="#" class="text-primary fw-bold">Curve DAO Token</a></td>
+                        <td>412.0202</td>
+                        <td class="fw-bold">+20.72%</td>
+                        <!-- <td>$4,366</td> -->
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#"><img src="Dashboard-assets/img/iconforall.PNG" alt=""></a></th>
+                        <td><a href="#" class="text-primary fw-bold">Enjin Coin</a></td>
+                        <td>186.6026</td>
+                        <td class="fw-bold">+9.18%</td>
+                        <!-- <td>$2,016</td> -->
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#"><img src="Dashboard-assets/img/iconforall.PNG" alt=""></a></th>
+                        <td><a href="#" class="text-primary fw-bold">IOST</a></td>
+                        <td>3.9696</td>
+                        <td class="fw-bold">+8.71</td>
+                        <!-- <td>$3,239</td> -->
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- End of Top Gainers -->
+                </div>
+
+              </div>
+            </div><!-- End Top Selling -->
+
+            <div class="col-12">
+              <div class="card top-selling">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                  </ul>
+                </div>
+
+                <!-- Top Losers -->
+
+                <div class="card-body pb-0">
+                  <h5 class="card-title">Top Losers <span>| Today</span></h5>
+
+                  <table class="table table-borderless">
+                    <thead>
+                      <tr>
+                        <th scope="col">Preview</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Price in INR</th>
+                        <th scope="col">Gain</th>
+                        <!-- <th scope="col">Revenue</th> -->
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><a href="#"><img src="Dashboard-assets/img/iconforall.PNG" alt=""></a></th>
+                        <td><a href="#" class="text-primary fw-bold">1inch</a></td>
+                        <td>416.6828</td>
+                        <td class="fw-bold" id = "down-index1">-5.13% <style>#down-index1{color: rgb(252, 62, 62);}</style></td>
+                        <!-- <td>$5,828</td> -->
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#"><img src="Dashboard-assets/img/iconforall.PNG" alt=""></a></th>
+                        <td><a href="#" class="text-primary fw-bold">The Graph</a></td>
+                        <td>76.64581</td>
+                        <td class="fw-bold" id = "down-index5">-1.6% <style>#down-index5{color: rgb(252, 62, 62);}</style></td>
+                        <!-- <td>$4,508</td> -->
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#"><img src="Dashboard-assets/img/iconforall.PNG" alt=""></a></th>
+                        <td><a href="#" class="text-primary fw-bold">Quanstamp</a></td>
+                        <td>4.261863</td>
+                        <td class="fw-bold" id = "down-index2">-1.24% <style>#down-index2{color: rgb(252, 62, 62);}</style></td>
+                        <!-- <td>$4,366</td> -->
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#"><img src="Dashboard-assets/img/iconforall.PNG" alt=""></a></th>
+                        <td><a href="#" class="text-primary fw-bold">Golem</a></td>
+                        <td>40.3162648</td>
+                        <td class="fw-bold" id = "down-index3">-1.07% <style>#down-index3{color: rgb(252, 62, 62);}</style></td>
+                        <!-- <td>$2,016</td> -->
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#"><img src="Dashboard-assets/img/iconforall.PNG" alt=""></a></th>
+                        <td><a href="#" class="text-primary fw-bold">yearn.finance</a></td>
+                        <td>27,75,330.54</td>
+                        <td class="fw-bold" id = "down-index4">-0.43% <style>#down-index4{color: rgb(252, 62, 62);}</style></td>
+                        <!-- <td>$3,239</td> -->
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- End of Top Loosers -->
+                </div>
+
+              </div>
+            </div><!-- End Least Selling -->
+
+
+          </div>
+        </div><!-- End Left side columns -->
+        <!-- End Top Gainers for good -->
+
+
+
+        
+        <!-- Right side columns -->
+        <div class="col-lg-4">
+
+          <!-- Recent Activity -->
+          <div class="card">
+            <div class="filter">
+              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                <li class="dropdown-header text-start">
+                  <h6>Filter</h6>
+                </li>
+
+                <li><a class="dropdown-item" href="#">Today</a></li>
+                <li><a class="dropdown-item" href="#">This Month</a></li>
+                <li><a class="dropdown-item" href="#">This Year</a></li>
+              </ul>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Recent Activity <span>| This Week</span></h5>
+
+              <div class="activity">
+
+                <div class="activity-item d-flex">
+                  <div class="activite-label">32 min</div>
+                  <i class='bi bi-circle-fill activity-badge text-success align-self-start'></i>
+                  <div class="activity-content">
+                    Bitcoin worth of INR 3 deposited to wallet.
+                  </div>
+                </div><!-- End activity item-->
+
+                <div class="activity-item d-flex">
+                  <div class="activite-label">56 min</div>
+                  <i class='bi bi-circle-fill activity-badge text-danger align-self-start'></i>
+                  <div class="activity-content">
+                    Ethereum worth of INR 7 deposited to wallet.
+                  </div>
+                </div><!-- End activity item-->
+
+                <div class="activity-item d-flex">
+                  <div class="activite-label">2 hrs</div>
+                  <i class='bi bi-circle-fill activity-badge text-primary align-self-start'></i>
+                  <div class="activity-content">
+                    Litecoin worth of INR 3 deposited to wallet.
+                  </div>
+                </div><!-- End activity item-->
+
+                <div class="activity-item d-flex">
+                  <div class="activite-label">1 day</div>
+                  <i class='bi bi-circle-fill activity-badge text-info align-self-start'></i>
+                  <div class="activity-content">
+                    Bitcoin worth of INR 1 deposited to wallet.
+                  </div>
+                </div><!-- End activity item-->
+
+                <div class="activity-item d-flex">
+                  <div class="activite-label">2 days</div>
+                  <i class='bi bi-circle-fill activity-badge text-warning align-self-start'></i>
+                  <div class="activity-content">
+                    DogeCoin worth of INR 2 deposited to wallet.
+                  </div>
+                </div><!-- End activity item-->
+
+                <div class="activity-item d-flex">
+                  <div class="activite-label">4 days</div>
+                  <i class='bi bi-circle-fill activity-badge text-muted align-self-start'></i>
+                  <div class="activity-content">
+                    Bitcoin worth of INR 3 deposited to wallet.
+                  </div>
+                </div><!-- End activity item-->
+
+              </div>
+
+            </div>
+          </div><!-- End Recent Activity -->
+
+          <!-- Budget Report -->
+          <!-- <div class="card">
+            <div class="filter">
+              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                <li class="dropdown-header text-start">
+                  <h6>Filter</h6>
+                </li>
+
+                <li><a class="dropdown-item" href="#">Today</a></li>
+                <li><a class="dropdown-item" href="#">This Month</a></li>
+                <li><a class="dropdown-item" href="#">This Year</a></li>
+              </ul>
+            </div>
+
+            <div class="card-body pb-0">
+              <h5 class="card-title">Budget Report <span>| This Month</span></h5>
+
+              <div id="budgetChart" style="min-height: 400px;" class="echart"></div>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  var budgetChart = echarts.init(document.querySelector("#budgetChart")).setOption({
+                    legend: {
+                      data: ['Allocated Budget', 'Actual Spending']
+                    },
+                    radar: {
+                      // shape: 'circle',
+                      indicator: [{
+                          name: 'Sales',
+                          max: 6500
+                        },
+                        {
+                          name: 'Administration',
+                          max: 16000
+                        },
+                        {
+                          name: 'Information Technology',
+                          max: 30000
+                        },
+                        {
+                          name: 'Customer Support',
+                          max: 38000
+                        },
+                        {
+                          name: 'Development',
+                          max: 52000
+                        },
+                        {
+                          name: 'Marketing',
+                          max: 25000
+                        }
+                      ]
+                    },
+                    series: [{
+                      name: 'Budget vs spending',
+                      type: 'radar',
+                      data: [{
+                          value: [4200, 3000, 20000, 35000, 50000, 18000],
+                          name: 'Allocated Budget'
+                        },
+                        {
+                          value: [5000, 14000, 28000, 26000, 42000, 21000],
+                          name: 'Actual Spending'
+                        }
+                      ]
+                    }]
+                  });
+                });
+              </script>
+
+            </div> -->
+          <!-- </div>End Budget Report -->
+
+          <!-- Website Traffic -->
+          <!-- <div class="card">
+            <div class="filter">
+              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                <li class="dropdown-header text-start">
+                  <h6>Filter</h6>
+                </li>
+
+                <li><a class="dropdown-item" href="#">Today</a></li>
+                <li><a class="dropdown-item" href="#">This Month</a></li>
+                <li><a class="dropdown-item" href="#">This Year</a></li>
+              </ul>
+            </div>
+
+            <div class="card-body pb-0">
+              <h5 class="card-title">Website Traffic <span>| Today</span></h5>
+
+              <div id="trafficChart" style="min-height: 400px;" class="echart"></div>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  echarts.init(document.querySelector("#trafficChart")).setOption({
+                    tooltip: {
+                      trigger: 'item'
+                    },
+                    legend: {
+                      top: '5%',
+                      left: 'center'
+                    },
+                    series: [{
+                      name: 'Access From',
+                      type: 'pie',
+                      radius: ['40%', '70%'],
+                      avoidLabelOverlap: false,
+                      label: {
+                        show: false,
+                        position: 'center'
+                      },
+                      emphasis: {
+                        label: {
+                          show: true,
+                          fontSize: '18',
+                          fontWeight: 'bold'
+                        }
+                      },
+                      labelLine: {
+                        show: false
+                      },
+                      data: [{
+                          value: 1048,
+                          name: 'Search Engine'
+                        },
+                        {
+                          value: 735,
+                          name: 'Direct'
+                        },
+                        {
+                          value: 580,
+                          name: 'Email'
+                        },
+                        {
+                          value: 484,
+                          name: 'Union Ads'
+                        },
+                        {
+                          value: 300,
+                          name: 'Video Ads'
+                        }
+                      ]
+                    }]
+                  });
+                });
+              </script>
+
+            </div> -->
+          <!-- </div>End Website Traffic -->
+
+          <!-- News & Updates Traffic -->
+          <div class="card">
+            <div class="filter">
+              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                <li class="dropdown-header text-start">
+                  <h6>Filter</h6>
+                </li>
+
+                <li><a class="dropdown-item" href="#">Today</a></li>
+                <li><a class="dropdown-item" href="#">This Month</a></li>
+                <li><a class="dropdown-item" href="#">This Year</a></li>
+              </ul>
+            </div>
+
+            <div class="card-body pb-0">
+              <h5 class="card-title">News &amp; Updates <span>| This Week</span></h5>
+
+              <div class="news">
+                <div class="post-item clearfix">
+                  <img src="Dashboard-assets/img/news-1.jpg" alt="">
+                  <h4><a href="#">BARRON'S Comcast Earnings Show Internet Subscriber Growth Is Slowing</a></h4>
+                  <p>BARRON'S Comcast Earnings Show Internet Subscriber Growth Is Slowing</p>
+                </div>
+
+                <div class="post-item clearfix">
+                  <img src="Dashboard-assets/img/news-2.jpg" alt="">
+                  <h4><a href="#">Tempur Sealy says supply chain challenges drove a $100 million increase in its backlog</a></h4>
+                  <p>Tempur Sealy says supply chain challenges drove a $100 million increase in its backlog</p>
+                </div>
+
+                <div class="post-item clearfix">
+                  <img src="Dashboard-assets/img/news-3.jpg" alt="">
+                  <h4><a href="#">This city just recorded the U.S.’s highest-ever average gasoline price</a></h4>
+                  <p>This city just recorded the U.S.’s highest-ever average gasoline price</p>
+                </div>
+
+                <div class="post-item clearfix">
+                  <img src="Dashboard-assets/img/news-4.jpg" alt="">
+                  <h4><a href="#">Capital Wealth Management, Llc Buys Invesco Total Return Bond ETF, SPDR S&P 400 Mid Cap ...</a></h4>
+                  <p>Capital Wealth Management, Llc Buys Invesco Total Return Bond ETF, SPDR S&P 400 Mid Cap ...</p>
+                </div>
+
+                <div class="post-item clearfix">
+                  <img src="Dashboard-assets/img/news-5.jpg" alt="">
+                  <h4><a href="#">Conservest Capital Advisors, Inc. Buys ARK Fintech Innovation ETF, iShares Core Dividend Growth ...</a></h4>
+                  <p>Conservest Capital Advisors, Inc. Buys ARK Fintech Innovation ETF, iShares Core Dividend Growth ...</p>
+                </div>
+
+              </div><!-- End sidebar recent posts-->
+
+            </div>
+          </div><!-- End News & Updates -->
+
+        </div><!-- End Right side columns -->
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>CoinGain</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="Dashboard-assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="Dashboard-assets/vendor/php-email-form/validate.js"></script>
+  <script src="Dashboard-assets/vendor/quill/quill.min.js"></script>
+  <script src="Dashboard-assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="Dashboard-assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="Dashboard-assets/vendor/chart.js/chart.min.js"></script>
+  <script src="Dashboard-assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="Dashboard-assets/vendor/echarts/echarts.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="Dashboard-assets/js/main.js"></script>
+
+</body>
+
+</html>
